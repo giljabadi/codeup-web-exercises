@@ -1,4 +1,22 @@
 "use strict";
+const sayHello  = (name) => "hello " + name;
+let myName = 'Gil'
+let helloMessage = sayHello(myName);
+console.log(helloMessage);
+
+let random = Math.floor((Math.random() * 3) + 1);
+
+const isTwo = (x) => x==2;
+
+console.log(isTwo(random));
+
+const calculateTip = (x, y) => x*y
+let billTotal = prompt("What was your bill total?")
+let tipPercentage = prompt("What percent would you like to tip? Write it with decimals")
+
+calculateTip(billTotal, tipPercentage)
+
+const applyDiscount = (x, y) => x-(x*y)
 
 /**
  * TODO:
