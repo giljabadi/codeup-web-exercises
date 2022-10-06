@@ -17,7 +17,7 @@ const isFive = (x) => x == 5
 
 // Write a function, isShortWord, that takes in a string and returns the boolean value true if the passed argument is shorter than 5 characters. Return false otherwise.
 
-const isShortWord = (x) => x.length == 5
+const isShortWord = (x) => x.length < 5
 
 
 // how many inputs? 1
