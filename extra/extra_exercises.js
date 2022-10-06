@@ -5,3 +5,4 @@ function fun() {
         document.getElementById("para").innerHTML = a + " has " + a.length + " characters in it :)";
     }
 }
+
