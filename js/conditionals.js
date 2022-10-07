@@ -1,129 +1,120 @@
 "use strict";
 
-let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-let randomColor = colors[Math.floor(Math.random() * colors.length)];
+// let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+// let randomColor = colors[Math.floor(Math.random() * colors.length)];
 
-// const analyzeColor = (str) => {
-//     let result
-//     if (str == 'red') {
-//         result = 'Strawberries are red'
-//     }
-//     else if (str == 'orange') {
-//         result = 'Gils hair is orange'
-//     }
-//     else if (str == 'yellow') {
-//         result = 'Dandelions are yellow'
-//     }
-//     else if (str == 'green') {
-//         result = 'Green cups means you"re done'
-//     }
-//     else if (str == 'blue') {
-//         result = 'The sky is blue'
-//     }
-//     else if (str == 'indigo') {
-//         result = 'Indigo is groovy'
-//     }
-//     else if (str == 'violet') {
-//         result = 'Violet or vioolent?!!?'
-//     }
-//     else {
-//         result = 'I dont know anything about ' + str
-//     }
-//     return result
-// }
-// console.log(analyzeColor(randomColor));
+let str = prompt("What's your favorite color?")
+const analyzeColor = (str) => {
 
-let result
-
-switch (colors) {
-    case 'red':
-        result = 'Strawberries are red'
-        break;
-    case "orange":
-        result = 'Gils hair is orange'
-        break;
-    case "yellow":
-        result = 'Dandelions are yellow'
-        break;
-    case "green":
-        result = "Green cups means you're done"
-        break;
-    case "blue":
-        result = 'The sky is blue'
-        break;
-    case "indigo":
-        result = 'Indigo is groovy'
-        break;
-    case "violet":
-        result = 'Violet or violent?!!?'
-        break;
-    default: {
-        result = 'I dont know anything about ' + 'color'
+    if (str == 'red') {
+        alert('Strawberries are red')
     }
-
+    else if (str == 'orange') {
+        alert('Gils hair is orange')
+    }
+    else if (str == 'yellow') {
+        alert('Dandelions are yellow')
+    }
+    else if (str == 'green') {
+        alert('Green cups means you"re done')
+    }
+    else if (str == 'blue') {
+        alert('The sky is blue')
+    }
+    else if (str == 'indigo') {
+        alert('Indigo is groovy')
+    }
+    else if (str == 'violet') {
+        alert('Violet or violent?!!?')
+    }
+    else {
+        alert('I dont know anything about ' + str)
+    }
+    return str
 }
+analyzeColor(str)
 
 
-/**
- * TODO:
- * Comment out the code above, and refactor your function to use a switch-case statement
- */
+// let alert(prompt("What's your favorite color?");
+// switch (result) {
+//     case 'red':
+//         alert('Strawberries are red')
+//         break;
+//     case "orange":
+//         alert('Gils hair is orange')
+//         break;
+//     case "yellow":
+//         alert('Dandelions are yellow')
+//         break;
+//     case "green":
+//         alert("Green cups means you're done")
+//         break;
+//     case "blue":
+//         alert('The sky is blue')
+//         break;
+//     case "indigo":
+//         alert('Indigo is groovy')
+//         break;
+//     case "violet":
+//         alert('Violet or violent?!!?')
+//         break;
+//     default: {
+//         alert('I dont know anything about ' + 'color')
+//     }
+//
+// }
 
-/**
- * TODO:
- * Prompt the user for a color when the page loads, and pass the input from the
- * user to your `analyzeColor` function. Alert the return value from your
- * function to show it to the user.
- */
+let discount = Math.floor(Math.random() * 5) + 1;
+alert("Your lucky number is: " + discount)
+let total = prompt("What's your total checkout price at Walmart?")
+const calculateTotal = (total, discount) => {
+    if (discount == 0 || discount >5) {
+        alert("You didn't receive a discount")
+    }
+    else if (discount == 1) {
+        alert("Your total was $" + total + " & after your lucky discount is: $" + (total - (total*.1)))
+    }
+    else if (discount == 2) {
+        alert("Your total was $" + total + " & after your lucky discount is: $" + (total - (total*.25)))
+    }
+    else if (discount == 3) {
+        alert("Your total was $" + total + " & after your lucky discount is: $" + (total - (total*.35)))
+    }
+    else if (discount == 4) {
+        alert("Your total was $" + total + " & after your lucky discount is: $" + (total - (total*.50)))
+    }
+    else if (discount == 5) {
+        alert("Your total was $" + total + " & after your lucky discount is: FREE!")
+    }
+}
+calculateTotal(total, discount)
 
-/* ########################################################################## */
 
-/**
- * TODO:
- * Suppose there's a promotion in Walmart, each customer is given a randomly
- * generated "lucky number" between 0 and 5. If your lucky number is 0 you have
- * no discount, if your lucky number is 1 you'll get a 10% discount, if it's 2,
- * the discount is 25%, if it's 3, 35%, if it's 4, 50%, and if it's 5 you'll get
- * everything for free!.
- *
- * Write a function named `calculateTotal` which accepts a lucky number and total
- * amount, and returns the discounted price.
- *
- * Example:
- * calculateTotal(0, 100) // returns 100
- * calculateTotal(4, 100) // returns 50
- * calculateTotal(5, 100) // returns 0
- *
- * Test your function by passing it various values and checking for the expected
- * return value.
- */
 
-/**
- * TODO:
- * Uncomment the line below to generate a random number between 0 and 5.
- * (In this line of code, 0 is inclusive, and 6 is exclusive)
- * Prompt the user for their total bill, then use your `calculateTotal` function
- * and alerts to display to the user what their lucky number was, what their
- * price before the discount was, and what their price after the discount is.
- */
-// Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
-
-/**
- * TODO:
- * Write some JavaScript that uses a `confirm` dialog to ask the user if they
- * would like to enter a number. If they click 'Ok', prompt the user for a
- * number, then use 3 separate alerts to tell the user:
- *
- * - whether the number is even or odd
- * - what the number plus 100 is
- * - if the number is negative or positive
- *
- * Do *NOT* display any of the above information
- * if the user enters a value that is not of the number data type.
- * Instead, use an alert to inform them of the incorrect input data type.
- *
- *
- * Can you refactor your code to use functions?
- * HINT: The way we prompt for a value could be improved
- */
+const numberPrompt = (num) => {
+    let confirmNumber = confirm("Would you like to enter a number? Press 'Ok' if yes, and 'Cancel' if no.")
+    if (confirmNumber === true) {
+        let num = parseInt(prompt("Enter your number here:"))
+            if (Number.isInteger(num) === false) {
+                alert("Incorrect input data type!")
+            }
+            if (num % 2 === 0) {
+                alert("Your number is even!")
+            }
+            else {
+                alert("Your number is odd!")
+            }
+        alert(num + 100)
+            if (Math.sign(num) === -1) {
+                alert("Your number is negative!")
+            }
+            else {
+                alert("Your number is positive!")
+            }
+    }
+    else {
+        alert("No problem, have a great day!")
+    }
+        return num
+}
+numberPrompt()
