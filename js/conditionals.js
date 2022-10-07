@@ -1,4 +1,6 @@
 "use strict";
+(function () {
+
 
 // let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 // let randomColor = colors[Math.floor(Math.random() * colors.length)];
@@ -118,3 +120,4 @@ const numberPrompt = (num) => {
         return num
 }
 numberPrompt()
+}())
