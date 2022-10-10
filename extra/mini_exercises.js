@@ -34,8 +34,8 @@ const isSameLength = (x, y) => x.length == y.length
 // What type of output? boolean
 
 
-let user = prompt("Enter username")
-let pw = prompt("Enter password")
+let user = prompt("Enter username");
+let pw = prompt("Enter password");
 if (user == "ginganinja" && pw == "codeup") {
     console.log("You have successfully logged in")
 } else {

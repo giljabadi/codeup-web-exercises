@@ -34,7 +34,7 @@ const analyzeColor = (str) => {
     }
     return str
 }
-analyzeColor(str)
+    console.log(analyzeColor(str));
 
 
 // let alert(prompt("What's your favorite color?");
