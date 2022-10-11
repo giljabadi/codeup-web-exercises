@@ -53,6 +53,6 @@ const multFive = (x) => {
     }
     return x*5
 }
-console.log(multFive(25.5));
+console.log(multFive(0));
 
 

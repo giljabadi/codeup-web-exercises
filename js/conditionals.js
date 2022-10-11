@@ -103,12 +103,17 @@ const numberPrompt = (num) => {
             if (num % 2 === 0) {
                 alert("Your number is even!")
             }
+            else if (num === 0) {
+                alert("0 isnt even or odd")
+            }
             else {
                 alert("Your number is odd!")
             }
         alert(num + 100)
             if (Math.sign(num) === -1) {
                 alert("Your number is negative!")
+            } else if (num === 0) {
+                alert("0 isn't negative or positive!")
             }
             else {
                 alert("Your number is positive!")
