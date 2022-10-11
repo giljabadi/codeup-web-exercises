@@ -43,4 +43,4 @@ const minusFive = () => {
         console.log(i)
     }
 }
-minusFive()
+// minusFive()
