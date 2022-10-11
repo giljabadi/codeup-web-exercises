@@ -1,5 +1,6 @@
 // ================ !! Mini-exercises !!
 
+"use strict"
 // Write a function, returnFive, that returns the number five. No inputs should be defined.
 const returnFive = () => 5;
 
@@ -33,11 +34,25 @@ const isSameLength = (x, y) => x.length == y.length
 // What type of input? str
 // What type of output? boolean
 
+//
+// let user = prompt("Enter username");
+// let pw = prompt("Enter password");
+// if (user == "ginganinja" && pw == "codeup") {
+//     console.log("You have successfully logged in")
+// } else {
+//     console.log("Credentials incorrect")
+// }
 
-let user = prompt("Enter username");
-let pw = prompt("Enter password");
-if (user == "ginganinja" && pw == "codeup") {
-    console.log("You have successfully logged in")
-} else {
-    console.log("Credentials incorrect")
+/*
+Write a function that takes in a number and returns the number passed multiplied by the number 5. If we pass anything other than a number into the function, the function should return the number 0.
+ */
+
+const multFive = (x) => {
+    if (parseFloat(x) !== x){
+        return 0
+    }
+    return x*5
 }
+console.log(multFive(25.5));
+
+
