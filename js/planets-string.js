@@ -1,8 +1,9 @@
 (function(){
     "use strict";
 
-    var planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
-    var planetsArray;
+    let planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
+    let planetsArray = planetsString.split('|')
+    console.log(planetsArray);
 
     /**
      * TODO:
@@ -10,13 +11,14 @@
      * planetsArray.
      * console.log planetsArray to check your work
      */
-
-    // console.log(planetsArray);
-
+    let str = planetsArray.join('<br>')
+    console.log(str);
     /**
      * TODO:
      * Create a string with <br> tags between each planet. console.log() your
      * results. Why might this be useful?
+     *
+     * so we can create multiple lines for the array on html :)
      *
      * BONUS:
      * Create another string that would display your planets in an undordered
@@ -24,4 +26,11 @@
      * string, and <li> tags around each planet.
      */
 
+const bonus = () => {
+        let newArr = planetsArray
+        newArr.unshift('<ul>');
+        newArr.push('</ul>');
+        return newArr.join('<li>');
+    }
+    console.log(bonus());
 })();
