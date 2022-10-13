@@ -68,6 +68,16 @@ inBetween(0, 1, 0.5) returns true
 
 const inBetween = (min, max, num) => num > min && num < max
 
-console.log(inBetween(1, 10, 5));
-console.log(inBetween(25, 26, 25));
-console.log(inBetween(0, 1, 0.5));
+// console.log(inBetween(1, 10, 5));
+// console.log(inBetween(25, 26, 25));
+// console.log(inBetween(0, 1, 0.5));
+
+/*
+Create a variable called num that is equal to 0. Write a while loop that increments "num" by 5 so long as num is less than 100. Do the same thing with a do-while.
+ */
+
+let i = 0;
+while (i < 100) {
+    console.log(i);
+    i+=5
+}
