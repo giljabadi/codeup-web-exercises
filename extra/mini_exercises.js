@@ -53,6 +53,21 @@ const multFive = (x) => {
     }
     return x*5
 }
-console.log(multFive(0));
+// console.log(multFive(0));
 
 
+/*
+Warm-Up:
+Write a function named "inBetween" that accepts three inputs: min, max, num, and returns a boolean determining whether or not the "num" parameter is in between the min and max numbers.
+
+EX:
+inBetween(1, 10, 5) returns true
+inBetween(25, 26, 25) returns false
+inBetween(0, 1, 0.5) returns true
+ */
+
+const inBetween = (min, max, num) => num > min && num < max
+
+console.log(inBetween(1, 10, 5));
+console.log(inBetween(25, 26, 25));
+console.log(inBetween(0, 1, 0.5));
