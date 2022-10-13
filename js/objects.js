@@ -177,10 +177,21 @@ const bookLoop = (x) => {
         return newBook
     }
 
-    console.log(books);
+    let hp = createBook("Harry Potter", "JK", "Rowling")
+    console.log(hp);
 
-    let book = createBook("Harry Potter", "JK", "Rowling")
-    console.log(book);
+    const showBookInfo = (obj) => {
+        if (typeof obj === 'object') {
+            console.log("Title: " + obj.title);
+            console.log("Author's First Name: " + obj.author.firstName);
+            console.log("Author's Last Name: " + obj.author.lastName);
+        }
+        else {
+            console.log("You didn't input an object");
+        }
+    }
+    showBookInfo(hp);
+    showBookInfo(books[0]);
 
     /**
      * Bonus:
@@ -197,10 +208,5 @@ const bookLoop = (x) => {
      *  `showBookInfo` function.
      */
 
-    const showBookInfo = (obj) => {
-
-    }
-
-    showBookInfo(books)
 
 })();
