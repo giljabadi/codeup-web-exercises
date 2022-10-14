@@ -31,19 +31,17 @@
 // randomForLoop()
 
     const pyramid = () => {
-        for (let i=1; i<=5; i++){
+        for (let i=1; i<=9; i++){
             let codeup = ""
-            for (let j=1; j<=5; j++) {
+            for (let j=1; j<=i; j++) {
                 codeup+=i
-                console.log(j);
             }
-            // console.log(codeup);
+            console.log(codeup);
         }
     }
 pyramid()
 
-
-
+/////////////////////////////////
 
     const minusFive = () => {
         for (let i=100; i>=5; i-=5) {

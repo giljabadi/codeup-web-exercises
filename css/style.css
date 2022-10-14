@@ -1,4 +1,46 @@
 .fancy-header {
     color: purple;
-    /*text-decoration: underline;*/
+    text-align: center;
+    text-decoration: underline;
+}
+h2 {
+    text-decoration: underline;
+}
+
+body {
+    background-image: url("https://img.freepik.com/free-photo/abstract-luxury-plain-blur-grey-black-gradient-used-as-background-studio-wall-display-your-products_1258-63641.jpg?w=2000&t=st=1665759616~exp=1665760216~hmac=bb07f2c62302d91bf5d67cef8419d532f2f627d915a176011af50948906940fd");
+    font-family: 'Figtree', sans-serif;
+
+}
+
+ul {
+    list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: mediumseagreen; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+    /* REFERENCE: https://www.w3schools.com/HOWTO/howto_css_bullet_color.asp*/
+}
+
+.table {
+    padding: 50px 30px 50px 80px;
+    font-size: x-large;
+}
+
+a:link {
+    color:red;
+}
+a:visited {
+    color:black;
+}
+a:hover {
+    color:lightseagreen;
+}
+a:active {
+    color:green;
 }

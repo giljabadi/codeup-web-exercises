@@ -6,7 +6,7 @@
             console.log(x *= 2);
         }
     }
-    // multiplyByTwo()
+    multiplyByTwo()
 
 let result = 5;
 let totalCones = Math.floor(Math.random() * 50) + 50;
@@ -25,7 +25,7 @@ do {
     }
 
 }
-    iceCream();
+    // iceCream();
 
 })();
 
