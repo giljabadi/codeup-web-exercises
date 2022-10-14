@@ -15,7 +15,7 @@ const iceCream = () => {
 do {
     let conesSold = Math.floor(Math.random() * 5) + 1
     totalCones -= conesSold
-    console.log(conesSold + " cones sold...");
+    console.log(conesSold + " cones sold... There are " + totalCones + " cones left.");
 } while (result < totalCones) {
         if (totalCones === 4 || totalCones === 3 || totalCones === 2 || totalCones === 1) {
             console.log("Cannot sell you " + totalCones + " more cone(s) " + "I have " + (totalCones-1) + " :-(")
