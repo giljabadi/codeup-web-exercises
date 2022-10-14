@@ -34,7 +34,7 @@ const analyzeColor = (str) => {
     }
     return str
 }
-    console.log(analyzeColor(str));
+    // console.log(analyzeColor(str));
 
 
 // let alert(prompt("What's your favorite color?");
@@ -89,7 +89,7 @@ const calculateTotal = (total, discount) => {
         alert("Your total was $" + total + " & after your lucky discount is: FREE!")
     }
 }
-calculateTotal(total, discount)
+// calculateTotal(total, discount)
 
 
 
@@ -124,5 +124,8 @@ const numberPrompt = (num) => {
     }
         return num
 }
-numberPrompt()
+// numberPrompt()
+
+
+
 }())
