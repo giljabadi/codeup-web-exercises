@@ -76,8 +76,30 @@ const inBetween = (min, max, num) => num > min && num < max
 Create a variable called num that is equal to 0. Write a while loop that increments "num" by 5 so long as num is less than 100. Do the same thing with a do-while.
  */
 
-let i = 0;
-while (i < 100) {
-    console.log(i);
-    i+=5
+// let i = 0;
+// while (i < 100) {
+//     console.log(i);
+//     i+=5
+// }
+
+/*
+Morning Warm-Up:
+
+Create a function named "typePrinter" that accepts an array as an input, and logs the data type of each element to the console.
+
+ */
+
+let arr = [true, "Icon", 25, "66", false, 0];
+
+const typePrinter = (x) => {
+    if (Array.isArray(x) === true) {
+        x.forEach(function (element) {
+            console.log(typeof element);
+        })
+    }
+    else {
+        console.log("You did not enter an array");
+    }
 }
+
+typePrinter(arr)
