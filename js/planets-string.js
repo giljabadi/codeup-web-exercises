@@ -3,7 +3,7 @@
 
     let planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
     let planetsArray = planetsString.split('|')
-    console.log(planetsArray);
+    // console.log(planetsArray);
 
     /**
      * TODO:
@@ -12,7 +12,7 @@
      * console.log planetsArray to check your work
      */
     let str = planetsArray.join('<br>')
-    console.log(str);
+    // console.log(str);
     /**
      * TODO:
      * Create a string with <br> tags between each planet. console.log() your
@@ -26,11 +26,12 @@
      * string, and <li> tags around each planet.
      */
 
-const bonus = () => {
-        let newArr = planetsArray
-        newArr.unshift('<ul>');
-        newArr.push('</ul>');
-        return newArr.join('<li>');
-    }
-    console.log(bonus());
+
+    console.log(planetsArray);
+
+
+    planetsArray.forEach(function (element) {
+        console.log("<li>"+element+"</li>");
+    })
+
 })();

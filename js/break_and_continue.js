@@ -10,7 +10,6 @@
             for (let i=1; i<=49; i+=2) {
                 if (i === parseFloat(oddInput)) {
                     console.log("Yikes! Lets skip number: " + oddInput)
-                    continue;
                 }
                 console.log("Here is an odd number: " + i)
             }
