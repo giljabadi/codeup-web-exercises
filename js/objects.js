@@ -128,14 +128,15 @@ person.sayHello = function () {
         }
     ]
 
-const bookLoop = (x) => {
+const bookLoop = () => {
         books.forEach(function (input) {
             console.log("Book # " + (books.indexOf(input)+1));
             console.log("Title: " + input.title);
             console.log("Author: " + input.author.firstName + " " + input.author.lastName);
+            console.log("---");
         })
 }
-// bookLoop()
+bookLoop()
     /**
      * TODO:
      * Loop through the books array and output the following information about
@@ -177,7 +178,7 @@ const bookLoop = (x) => {
         return newBook
     }
 
-    let hp = createBook("Harry Potter", "JK", "Rowling")
+    let hp = createBook("Harry Potter", "JK", "Rowling");
     console.log(hp);
 
     const showBookInfo = (obj) => {
@@ -207,6 +208,4 @@ const bookLoop = (x) => {
      *  Refactor your loop to use your
      *  `showBookInfo` function.
      */
-
-
 })();

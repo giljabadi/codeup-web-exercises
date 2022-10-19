@@ -3,25 +3,31 @@
 
 <head>
     <title>
-        JavaScript prompt() method
+        HTML Tests
     </title>
-    <script src="extra_exercises.js"></script>
+<!--    <script src="extra_exercises.js"></script>-->
 </head>
 
-<body style = "text-align: center;">
-<h1 style = "color: red;">
-    Hello World
-</h1>
-<h2>
-    Example of the JavaScript prompt() method
-</h2>
+<body>
+<ul>
+    <li data-dbid="123">Item one</li>
+    <li data-dbid="234">Item two</li>
+</ul>
+<script>
+    "use strict";
+    (function() {
 
-<button onclick = "fun()">
-    Click me
-</button>
-<p id = "para"></p>
+        let listItems = document.getElementsByTagName('li');
+        // console.log(listItems);
 
+        for (let i = 0; i < listItems.length; i++) {
+            // console.log(listItems[i]);
+            let dbId = listItems[i].getAttribute("data-dbid");
+            console.log(dbId);
+        }
 
+    })();
+</script>
 </body>
 
 </html>
