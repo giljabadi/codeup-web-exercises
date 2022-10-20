@@ -27,34 +27,17 @@
 </p>
 
 <button id="b1">Button 1</button>
-<button>Button 2</button>
+<button id="b2">Button 2</button>
 <br>
 <br>
-<button>Button 3</button>
-<button>Button 4</button>
+<button id="b3">Button 3</button>
+<button id="b4">Button 4</button>
 
 <script>
     (function() {
         "use strict";
-
-        let mainHeader = document.querySelector('#main-header');
-        console.log(mainHeader.innerHTML);
-
-        function changeText() {
-            return mainHeader.innerHTML = 'Javascript is cool';
-        }
-
-        document.querySelector("#b1").addEventListener("click", changeText);
-
-
-
-
-
-
-
-
         // TODO: Uncomment next line and get the main header element by id
-
+        let mainHeader = document.querySelector('#main-header');
         // console.log(mainHeader);
 
         // TODO: Set inner html of mainHeader to "JavaScript is Cool"
@@ -77,13 +60,13 @@
 
         // console.log(listItems);
 
-        let lis = document.querySelector('ul li:nth-of-type(3)');
-        lis.style.color = "red"
-        // dbId.forEach(function (id) {
-        //     id.style.color = 'blue'
-        // })
+        // let lis = document.querySelector('ul li:nth-of-type(3)');
+        // lis.style.color = "red"
+        // // dbId.forEach(function (id) {
+        // //     id.style.color = 'blue'
+        // // })
         let dbId = document.querySelector('li')
-        dbId.style.color = 'blue'
+        // dbId.style.color = 'blue'
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
         let subParagraphs = document.querySelector(".sub-paragraph")
         console.log(subParagraphs);
@@ -99,7 +82,31 @@
         For example, the first button should set inner html of mainHeader to "JavaScript is Cool".
          */
 
+        //1.
+        function changeText() {
+            return mainHeader.innerHTML = 'Javascript is cool';
+        }
+        document.querySelector("#b1").addEventListener("click", changeText);
 
+        // 2.
+        function button2 () {
+            return subHeader.innerHTML = 'I love coding!!'
+        }
+        document.querySelector("#b2").addEventListener("click", button2);
+
+        //3.
+        function button3 () {
+            return subParagraphs.innerHTML = 'lets change the site with some buttons'
+        }
+        document.querySelector('#b3').addEventListener("click", button3)
+
+        //4.
+        function button4 () {
+            for (let i=0; i<listItems.length; i++) {
+                listItems[i].style.color = 'green'
+            }
+        }
+        document.querySelector('#b4').addEventListener("click", button4)
 
 
 
