@@ -1,0 +1,10 @@
+body h1 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+body h2 {
+    font-size: 3.5rem;
+}
+.contact{
+    margin: 0 auto;
+}
