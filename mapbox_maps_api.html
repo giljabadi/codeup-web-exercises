@@ -60,13 +60,14 @@
         }
     ]
     //
-    setAllMarkersAndPopups(restaurants);
+
 
     function setAllMarkersAndPopups(arrayRestaurants) {
         for (let restaurant of restaurants) {
             placeMarkerAndPopup(restaurant, accessToken, map)
         }
     }
+    setAllMarkersAndPopups(restaurants);
 
     function placeMarkerAndPopup(info, token, map) {
         geocode(info.address, token).then(function (coordinates) {

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Map Project</title>
+</head>
+<body>
+
+<script src="js/keys.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+<script>
+    $.get("http://api.openweathermap.org/data/2.5/weather", {
+        APPID: OPEN_WEATHER_APPID,
+        q: "Dallas, US",
+        units: "imperial"
+    }).done(function(data) {
+        console.log(data.main);
+    });
+</script>
+
+<script src="js/weather_map.js"></script>
+</body>
+</html>
