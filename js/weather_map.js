@@ -1,4 +1,5 @@
 "use strict";
+
 //WEATHER API
 let weatherAPI = "http://api.openweathermap.org/data/2.5/forecast"
 
@@ -56,7 +57,7 @@ let append = (data) => {
         console.log(data[i])
         const {dt_txt, main: {humidity, temp, temp_max, temp_min}, weather: [{description, icon}], wind: {speed}} = data[i]
         html += `
-            <div class="card border-light card " style="width: 20%; eight: ">
+            <div class="card border-light card" style="width: 20%; eight: ">
                <h6 class="card-header text-center text-dark opacity-75 mb-2" style="font-size: small">${dt_txt.substring(5,7)}.${dt_txt.substring(8,10)}.${dt_txt.substring(0,4)}
                </h6>
                <img src='http://openweathermap.org/img/w/${icon}.png' class="img-thumbnail mx-auto d-block border-0" style='width: 100px; height: 100px;' alt="...">
@@ -74,12 +75,12 @@ let append = (data) => {
             
               </div>
               <ul class="list-group list-group-flush text-center">
-                
+             
                 <li class="list-group-item text-dark" style="font-size: small">Humidity: ${humidity}%</li>
                 <li class="list-group-item text-dark" style="font-size: small">Wind: ${speed} mph</li>
               </ul>
               <div class="card-body p-0 ">
-              <p class="list-group-item bg-secondary text-light text-center p-0 m-0">${description.toUpperCase()}</p>
+              <p class="list-group-item bg-secondary text-dark text-center p-0 m-0">${description.toUpperCase()}</p>
               </div>
             </div>`}
     return html
